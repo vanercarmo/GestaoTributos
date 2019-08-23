@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://services.senior.com.br" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="g5-senior-services" targetNamespace="http://services.senior.com.br" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="https://web20.senior.com.br:38821/g5-senior-services/sapiens_Synccom_senior_g5_co_mct_ctb_importacaolctctb?xsd=1" namespace="http://services.senior.com.br" />
+    </xsd:schema>
+  </types>
+  <message name="Importar">
+    <part name="user" type="xsd:string" />
+    <part name="password" type="xsd:string" />
+    <part name="encryption" type="xsd:int" />
+    <part name="parameters" type="tns:importacaolctctbImportarIn" />
+  </message>
+  <message name="ImportarResponse">
+    <part name="result" type="tns:importacaolctctbImportarOut" />
+  </message>
+  <message name="Importar_3">
+    <part name="user" type="xsd:string" />
+    <part name="password" type="xsd:string" />
+    <part name="encryption" type="xsd:int" />
+    <part name="parameters" type="tns:importacaolctctbImportar3In" />
+  </message>
+  <message name="Importar_3Response">
+    <part name="result" type="tns:importacaolctctbImportar3Out" />
+  </message>
+  <message name="Importar_2">
+    <part name="user" type="xsd:string" />
+    <part name="password" type="xsd:string" />
+    <part name="encryption" type="xsd:int" />
+    <part name="parameters" type="tns:importacaolctctbImportar2In" />
+  </message>
+  <message name="Importar_2Response">
+    <part name="result" type="tns:importacaolctctbImportar2Out" />
+  </message>
+  <portType name="sapiens_Synccom_senior_g5_co_mct_ctb_importacaolctctb">
+    <operation name="Importar" parameterOrder="user password encryption parameters">
+      <input wsam:Action="http://services.senior.com.br/sapiens_Synccom_senior_g5_co_mct_ctb_importacaolctctb/ImportarRequest" message="tns:Importar" />
+      <output wsam:Action="http://services.senior.com.br/sapiens_Synccom_senior_g5_co_mct_ctb_importacaolctctb/ImportarResponse" message="tns:ImportarResponse" />
+    </operation>
+    <operation name="Importar_3" parameterOrder="user password encryption parameters">
+      <input wsam:Action="http://services.senior.com.br/sapiens_Synccom_senior_g5_co_mct_ctb_importacaolctctb/Importar_3Request" message="tns:Importar_3" />
+      <output wsam:Action="http://services.senior.com.br/sapiens_Synccom_senior_g5_co_mct_ctb_importacaolctctb/Importar_3Response" message="tns:Importar_3Response" />
+    </operation>
+    <operation name="Importar_2" parameterOrder="user password encryption parameters">
+      <input wsam:Action="http://services.senior.com.br/sapiens_Synccom_senior_g5_co_mct_ctb_importacaolctctb/Importar_2Request" message="tns:Importar_2" />
+      <output wsam:Action="http://services.senior.com.br/sapiens_Synccom_senior_g5_co_mct_ctb_importacaolctctb/Importar_2Response" message="tns:Importar_2Response" />
+    </operation>
+  </portType>
+  <binding name="sapiens_Synccom_senior_g5_co_mct_ctb_importacaolctctbPortBinding" type="tns:sapiens_Synccom_senior_g5_co_mct_ctb_importacaolctctb">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <operation name="Importar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://services.senior.com.br" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://services.senior.com.br" />
+      </output>
+    </operation>
+    <operation name="Importar_3">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://services.senior.com.br" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://services.senior.com.br" />
+      </output>
+    </operation>
+    <operation name="Importar_2">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://services.senior.com.br" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://services.senior.com.br" />
+      </output>
+    </operation>
+  </binding>
+  <service name="g5-senior-services">
+    <port name="sapiens_Synccom_senior_g5_co_mct_ctb_importacaolctctbPort" binding="tns:sapiens_Synccom_senior_g5_co_mct_ctb_importacaolctctbPortBinding">
+      <soap:address location="https://web20.senior.com.br:38821/g5-senior-services/sapiens_Synccom_senior_g5_co_mct_ctb_importacaolctctb" />
+    </port>
+  </service>
+</definitions>

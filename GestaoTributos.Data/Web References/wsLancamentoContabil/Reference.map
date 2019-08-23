@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="https://web20.senior.com.br:38821/g5-senior-services/sapiens_Synccom_senior_g5_co_mct_ctb_importacaolctctb?xsd=1" filename="sapiens_Synccom_senior_g5_co_mct_ctb_importacaolctctb.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="https://web20.senior.com.br:38821/g5-senior-services/sapiens_Synccom_senior_g5_co_mct_ctb_importacaolctctb?wsdl" filename="g5-senior-services.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>

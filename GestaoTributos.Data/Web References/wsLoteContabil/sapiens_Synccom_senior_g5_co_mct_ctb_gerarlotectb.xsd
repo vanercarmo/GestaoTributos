@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://services.senior.com.br" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="gerarlotectbGerar2In">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codEmp" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="codFil" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="datLot" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="desLot" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="flowInstanceID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="flowName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="oriLot" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipLot" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="totLot" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="gerarlotectbGerar2Out">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="erroExecucao" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numLot" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="gerarlotectbGerarIn">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codEmp" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="codFil" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="datLot" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="desLot" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="flowInstanceID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="flowName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="oriLot" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="totLot" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="gerarlotectbGerarOut">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="erroExecucao" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numLot" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

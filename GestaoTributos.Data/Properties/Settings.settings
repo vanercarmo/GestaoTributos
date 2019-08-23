@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="GestaoTributos.Data.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="GestaoTributos_Data_wsLoteContabil_g5_senior_services" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://web20.senior.com.br:38821/g5-senior-services/sapiens_Synccom_senior_g5_co_mct_ctb_gerarlotectb</Value>
+    </Setting>
+    <Setting Name="GestaoTributos_Data_wsLancamentoContabil_g5_senior_services" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://web20.senior.com.br:38821/g5-senior-services/sapiens_Synccom_senior_g5_co_mct_ctb_importacaolctctb</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

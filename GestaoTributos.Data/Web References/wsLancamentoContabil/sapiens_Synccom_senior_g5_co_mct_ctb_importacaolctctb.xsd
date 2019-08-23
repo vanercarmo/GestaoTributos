@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.senior.com.br" targetNamespace="http://services.senior.com.br" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="importacaolctctbImportar3In">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EIgnorarRatAux" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ELctZer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ETipRet" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="flowInstanceID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="flowName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="gridLct" nillable="true" type="tns:importacaolctctbImportar3InGridLct" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="importacaolctctbImportar3InGridLct">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="auxiliar" nillable="true" type="tns:importacaolctctbImportar3InGridLctAuxiliar" />
+      <xs:element minOccurs="0" name="cgcCpf" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="cgcCre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="codEmp" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="codFil" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="codFor" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="codHpd" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="cplLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ctaCre" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ctaDeb" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="datLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="desLot" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="docLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="forCre" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ideUni" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numFtc" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="numLot" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="obsCpl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="oriLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="rateio" nillable="true" type="tns:importacaolctctbImportar3InGridLctRateio" />
+      <xs:element minOccurs="0" name="vlrLct" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="importacaolctctbImportar3InGridLctAuxiliar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codHpd" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="cplLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ctaAux" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ctaRed" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="docLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vlrAux" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="importacaolctctbImportar3InGridLctRateio">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codCcu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ctaFin" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ctaRed" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="perRat" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="vlrRat" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="importacaolctctbImportar3Out">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="erroExecucao" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="gridLctResult" nillable="true" type="tns:importacaolctctbImportar3OutGridLctResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="importacaolctctbImportar3OutGridLctResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cgcCpf" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="cgcCre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="codEmp" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="codFil" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="codFor" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="codHpd" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="cplLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ctaCre" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ctaDeb" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="datLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="desLot" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="docLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="forCre" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ideUni" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="linha" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="numFtc" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="numLct" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="numLot" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="obsCpl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="oriLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="resultado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vlrLct" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="importacaolctctbImportar2In">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ELctZer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ETipRet" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="flowInstanceID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="flowName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="gridLct" nillable="true" type="tns:importacaolctctbImportar2InGridLct" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="importacaolctctbImportar2InGridLct">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="auxiliar" nillable="true" type="tns:importacaolctctbImportar2InGridLctAuxiliar" />
+      <xs:element minOccurs="0" name="cgcCpf" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="cgcCre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="codEmp" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="codFil" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="codFor" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="codHpd" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="cplLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ctaCre" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ctaDeb" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="datLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="desLot" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="docLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="forCre" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ideUni" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numFtc" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="numLot" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="obsCpl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="oriLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="rateio" nillable="true" type="tns:importacaolctctbImportar2InGridLctRateio" />
+      <xs:element minOccurs="0" name="vlrLct" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="importacaolctctbImportar2InGridLctAuxiliar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codHpd" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="cplLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ctaAux" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ctaRed" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="docLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vlrAux" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="importacaolctctbImportar2InGridLctRateio">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codCcu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ctaFin" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ctaRed" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="perRat" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="vlrRat" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="importacaolctctbImportar2Out">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="erroExecucao" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="gridLctResult" nillable="true" type="tns:importacaolctctbImportar2OutGridLctResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="importacaolctctbImportar2OutGridLctResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cgcCpf" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="cgcCre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="codEmp" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="codFil" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="codFor" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="codHpd" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="cplLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ctaCre" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ctaDeb" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="datLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="desLot" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="docLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="forCre" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ideUni" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="linha" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="numFtc" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="numLct" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="numLot" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="obsCpl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="oriLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="resultado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vlrLct" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="importacaolctctbImportarIn">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="flowInstanceID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="flowName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="gridLct" nillable="true" type="tns:importacaolctctbImportarInGridLct" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="importacaolctctbImportarInGridLct">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="auxiliar" nillable="true" type="tns:importacaolctctbImportarInGridLctAuxiliar" />
+      <xs:element minOccurs="0" name="cgcCpf" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="cgcCre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="codEmp" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="codFil" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="codFor" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="codHpd" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="cplLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ctaCre" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ctaDeb" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="datLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="desLot" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="docLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="forCre" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="numFtc" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="numLot" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="obsCpl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="oriLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="rateio" nillable="true" type="tns:importacaolctctbImportarInGridLctRateio" />
+      <xs:element minOccurs="0" name="vlrLct" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="importacaolctctbImportarInGridLctAuxiliar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codHpd" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="cplLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ctaAux" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ctaRed" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="docLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vlrAux" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="importacaolctctbImportarInGridLctRateio">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codCcu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ctaFin" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ctaRed" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="perRat" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="vlrRat" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="importacaolctctbImportarOut">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="erroExecucao" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="gridLctResult" nillable="true" type="tns:importacaolctctbImportarOutGridLctResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="importacaolctctbImportarOutGridLctResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cgcCpf" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="cgcCre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="codEmp" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="codFil" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="codFor" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="codHpd" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="cplLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ctaCre" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ctaDeb" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="datLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="desLot" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="docLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="forCre" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="linha" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="numFtc" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="numLct" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="numLot" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="obsCpl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="oriLct" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="resultado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vlrLct" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

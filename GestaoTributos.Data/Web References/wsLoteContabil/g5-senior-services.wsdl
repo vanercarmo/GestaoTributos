@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://services.senior.com.br" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="g5-senior-services" targetNamespace="http://services.senior.com.br" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="https://web20.senior.com.br:38821/g5-senior-services/sapiens_Synccom_senior_g5_co_mct_ctb_gerarlotectb?xsd=1" namespace="http://services.senior.com.br" />
+    </xsd:schema>
+  </types>
+  <message name="Gerar">
+    <part name="user" type="xsd:string" />
+    <part name="password" type="xsd:string" />
+    <part name="encryption" type="xsd:int" />
+    <part name="parameters" type="tns:gerarlotectbGerarIn" />
+  </message>
+  <message name="GerarResponse">
+    <part name="result" type="tns:gerarlotectbGerarOut" />
+  </message>
+  <message name="Gerar_2">
+    <part name="user" type="xsd:string" />
+    <part name="password" type="xsd:string" />
+    <part name="encryption" type="xsd:int" />
+    <part name="parameters" type="tns:gerarlotectbGerar2In" />
+  </message>
+  <message name="Gerar_2Response">
+    <part name="result" type="tns:gerarlotectbGerar2Out" />
+  </message>
+  <portType name="sapiens_Synccom_senior_g5_co_mct_ctb_gerarlotectb">
+    <operation name="Gerar" parameterOrder="user password encryption parameters">
+      <input wsam:Action="http://services.senior.com.br/sapiens_Synccom_senior_g5_co_mct_ctb_gerarlotectb/GerarRequest" message="tns:Gerar" />
+      <output wsam:Action="http://services.senior.com.br/sapiens_Synccom_senior_g5_co_mct_ctb_gerarlotectb/GerarResponse" message="tns:GerarResponse" />
+    </operation>
+    <operation name="Gerar_2" parameterOrder="user password encryption parameters">
+      <input wsam:Action="http://services.senior.com.br/sapiens_Synccom_senior_g5_co_mct_ctb_gerarlotectb/Gerar_2Request" message="tns:Gerar_2" />
+      <output wsam:Action="http://services.senior.com.br/sapiens_Synccom_senior_g5_co_mct_ctb_gerarlotectb/Gerar_2Response" message="tns:Gerar_2Response" />
+    </operation>
+  </portType>
+  <binding name="sapiens_Synccom_senior_g5_co_mct_ctb_gerarlotectbPortBinding" type="tns:sapiens_Synccom_senior_g5_co_mct_ctb_gerarlotectb">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <operation name="Gerar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://services.senior.com.br" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://services.senior.com.br" />
+      </output>
+    </operation>
+    <operation name="Gerar_2">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" namespace="http://services.senior.com.br" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://services.senior.com.br" />
+      </output>
+    </operation>
+  </binding>
+  <service name="g5-senior-services">
+    <port name="sapiens_Synccom_senior_g5_co_mct_ctb_gerarlotectbPort" binding="tns:sapiens_Synccom_senior_g5_co_mct_ctb_gerarlotectbPortBinding">
+      <soap:address location="https://web20.senior.com.br:38821/g5-senior-services/sapiens_Synccom_senior_g5_co_mct_ctb_gerarlotectb" />
+    </port>
+  </service>
+</definitions>

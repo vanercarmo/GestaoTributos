@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoTributos.LoteContabil", "GestaoTributos\GestaoTributos.LoteContabil.csproj", "{56944E2A-A61B-4C4B-855D-9C960412773E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{D0C2B195-C08D-4637-AD54-35030EC10125}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{42619774-3661-4E8C-B2DF-C9C2F791D818}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{604AE882-227A-41B6-97AD-6F1AACDFD693}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Data", "4 - Data", "{4A60E00D-96D3-4296-BF99-46194F0540FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoTributos.Data", "GestaoTributos.Data\GestaoTributos.Data.csproj", "{D73E3D8F-D5F0-4509-8B5C-AD862B851404}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoTributos.Domain", "GestaoTributos.Domain\GestaoTributos.Domain.csproj", "{C82A86A9-4A19-45BD-8995-5EA46FF5F094}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoTributos.App", "GestaoTributos.App\GestaoTributos.App.csproj", "{09B6952E-D224-4E23-B708-BAB19D2C4043}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoTributos.LancamentoContabil", "GestaoTributos.LancamentoContabil\GestaoTributos.LancamentoContabil.csproj", "{13F171A2-39FD-4A22-B2C6-81599BE11AD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoTributos.Logger", "GestaoTributos.Logger\GestaoTributos.Logger.csproj", "{68B21D74-1B82-43D7-B47E-AD9A8583DEF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56944E2A-A61B-4C4B-855D-9C960412773E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56944E2A-A61B-4C4B-855D-9C960412773E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56944E2A-A61B-4C4B-855D-9C960412773E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56944E2A-A61B-4C4B-855D-9C960412773E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D73E3D8F-D5F0-4509-8B5C-AD862B851404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D73E3D8F-D5F0-4509-8B5C-AD862B851404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D73E3D8F-D5F0-4509-8B5C-AD862B851404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D73E3D8F-D5F0-4509-8B5C-AD862B851404}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C82A86A9-4A19-45BD-8995-5EA46FF5F094}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C82A86A9-4A19-45BD-8995-5EA46FF5F094}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C82A86A9-4A19-45BD-8995-5EA46FF5F094}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C82A86A9-4A19-45BD-8995-5EA46FF5F094}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09B6952E-D224-4E23-B708-BAB19D2C4043}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09B6952E-D224-4E23-B708-BAB19D2C4043}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09B6952E-D224-4E23-B708-BAB19D2C4043}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09B6952E-D224-4E23-B708-BAB19D2C4043}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13F171A2-39FD-4A22-B2C6-81599BE11AD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13F171A2-39FD-4A22-B2C6-81599BE11AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13F171A2-39FD-4A22-B2C6-81599BE11AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13F171A2-39FD-4A22-B2C6-81599BE11AD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68B21D74-1B82-43D7-B47E-AD9A8583DEF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68B21D74-1B82-43D7-B47E-AD9A8583DEF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68B21D74-1B82-43D7-B47E-AD9A8583DEF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68B21D74-1B82-43D7-B47E-AD9A8583DEF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{56944E2A-A61B-4C4B-855D-9C960412773E} = {D0C2B195-C08D-4637-AD54-35030EC10125}
+		{D73E3D8F-D5F0-4509-8B5C-AD862B851404} = {4A60E00D-96D3-4296-BF99-46194F0540FE}
+		{C82A86A9-4A19-45BD-8995-5EA46FF5F094} = {604AE882-227A-41B6-97AD-6F1AACDFD693}
+		{09B6952E-D224-4E23-B708-BAB19D2C4043} = {42619774-3661-4E8C-B2DF-C9C2F791D818}
+		{13F171A2-39FD-4A22-B2C6-81599BE11AD9} = {D0C2B195-C08D-4637-AD54-35030EC10125}
+		{68B21D74-1B82-43D7-B47E-AD9A8583DEF5} = {4A60E00D-96D3-4296-BF99-46194F0540FE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD96541E-9B4C-433F-BA41-6CF412782378}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://oletfsdmz01:8080/tfs/bbc
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = GestaoTributos\\GestaoTributos.LoteContabil.csproj
+		SccProjectTopLevelParentUniqueName1 = GestaoTributos.sln
+		SccProjectName1 = GestaoTributos
+		SccLocalPath1 = GestaoTributos
+		SccProjectUniqueName2 = GestaoTributos.Data\\GestaoTributos.Data.csproj
+		SccProjectTopLevelParentUniqueName2 = GestaoTributos.sln
+		SccProjectName2 = GestaoTributos.Data
+		SccLocalPath2 = GestaoTributos.Data
+		SccProjectUniqueName3 = GestaoTributos.Domain\\GestaoTributos.Domain.csproj
+		SccProjectTopLevelParentUniqueName3 = GestaoTributos.sln
+		SccProjectName3 = GestaoTributos.Domain
+		SccLocalPath3 = GestaoTributos.Domain
+		SccProjectUniqueName4 = GestaoTributos.App\\GestaoTributos.App.csproj
+		SccProjectTopLevelParentUniqueName4 = GestaoTributos.sln
+		SccProjectName4 = GestaoTributos.App
+		SccLocalPath4 = GestaoTributos.App
+		SccProjectUniqueName5 = GestaoTributos.LancamentoContabil\\GestaoTributos.LancamentoContabil.csproj
+		SccProjectTopLevelParentUniqueName5 = GestaoTributos.sln
+		SccProjectName5 = GestaoTributos.LancamentoContabil
+		SccLocalPath5 = GestaoTributos.LancamentoContabil
+	EndGlobalSection
+EndGlobal
